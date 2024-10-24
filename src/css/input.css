@@ -1,76 +1,68 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
-	html{
-		@apply scroll-smooth;
-	}
-	body{
-		@apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor font-poppins tracking-wide overflow-x-hidden;
-	}
-	section{
-		@apply py-16 md:pt-28 md:pb-20
-	}
-	input, select, textarea{
-		@apply w-full dark:bg-darkBodyColor border border-gray-800 px-4 py-3 rounded-lg focus:outline-none active:outline-none focus:border-primaryColorLight active:border-primaryColorLight;
-	}
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor font-poppins tracking-wide overflow-x-hidden;
+  }
+  section {
+    @apply py-16 md:pt-28 md:pb-20;
+  }
+  input,
+  select,
+  textarea {
+    @apply w-full dark:bg-darkBodyColor border border-gray-800 px-4 py-3 rounded-lg focus:outline-none active:outline-none focus:border-primaryColorLight active:border-primaryColorLight;
+  }
+  textarea {
+    @apply pr-4;
+  }
 }
 
-@layer components{
-	.nav-link{
-		@apply relative font-bold text-white  lg:text-primaryColor dark:text-white;
-	}
-	.nav-link::before{
-		@apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0  scale-x-0 transition-transform ease-in-out origin-right duration-500;
-	}
-	.active::before,
-	.nav-link:hover::before{
-		@apply scale-x-100 origin-left;
-	}
-	.btn{
-		@apply relative overflow-hidden bg-gradient-to-r from-primaryColorLight text-whiteColor px-7 py-3 rounded-full capitalize font-bold flex justify-center items-center;
-	}
-	.btn::before{
-		@apply content-[''] absolute w-full h-full bg-gradient-to-r from-primaryColorLight top-0 left-0 rounded-full scale-x-0 transition-transform ease-in-out origin-right duration-300;
-	}
-	.btn:hover::before{
-		@apply scale-x-100 origin-left;
-	}
-		.btn_outline {
-			@apply border border-primaryColorLight text-primaryColorLight py-4 px-9 rounded-full hover:bg-primaryColor hover:text-whiteColor duration-300;
-		}
-	.title,
-	.subtitle{
-		@apply text-4xl lg:text-6xl xl:text-[65px] font-bold bg-gradient-to-r from-primaryColorLight to-primaryColor dark:to-whiteColor inline text-transparent bg-clip-text;
-	}
-	.subtitle{
-		@apply text-3xl md:text-4xl lg:text-5xl;
-	}
-	/* MY Quality Services */
-	.service__item{
-		@apply flex flex-wrap items-center gap-3 px-4 py-8 border-b border-primaryColorLight hover:bg-primaryColorLight cursor-pointer duration-300;
-	}
-
-	
+@layer components {
+  .nav-link {
+    @apply relative font-bold text-white  lg:text-primaryColor dark:text-white;
+  }
+  .nav-link::before {
+    @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0  scale-x-0 transition-transform ease-in-out origin-right duration-500;
+  }
+  .active::before,
+  .nav-link:hover::before {
+    @apply scale-x-100 origin-left;
+  }
+  .btn {
+    @apply relative overflow-hidden bg-gradient-to-r from-primaryColorLight text-whiteColor px-7 py-3 rounded-full capitalize font-bold flex justify-center items-center;
+  }
+  .btn::before {
+    @apply content-[''] absolute w-full h-full bg-gradient-to-r from-primaryColorLight top-0 left-0 rounded-full scale-x-0 transition-transform ease-in-out origin-right duration-300;
+  }
+  .btn:hover::before {
+    @apply scale-x-100 origin-left;
+  }
+  .btn_outline {
+    @apply border border-primaryColorLight text-primaryColorLight py-4 px-9 rounded-full hover:bg-primaryColor hover:text-whiteColor duration-300;
+  }
+  .title,
+  .subtitle {
+    @apply text-4xl lg:text-6xl xl:text-[65px] font-bold bg-gradient-to-r from-primaryColorLight to-primaryColor dark:to-whiteColor inline text-transparent bg-clip-text;
+  }
+  .subtitle {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  /* MY Quality Services */
+  .service__item {
+    @apply flex flex-wrap items-center gap-3 px-4 py-8 border-b border-primaryColorLight hover:bg-primaryColorLight cursor-pointer duration-300;
+  }
 }
 
-@layer utilities{
-	/* hero */
-	.social-icon{
-		@apply relative border border-primaryColorLight text-primaryColorLight h-10 w-10 rounded-full grid place-items-center cursor-pointer hover:text-whiteColor z-50  duration-300 before:content-[''] before:absolute before:w-full before:h-full before:bg-primaryColorLight before:inset-0 before:rounded-full before:scale-0 before:transition-transform before:ease-in-out before:duration-300 before:-z-10  hover:before:scale-100 hover:origin-center;
-	}
-	.social-icon::before{
-		/* @apply content-[''] absolute w-full h-full bg-primaryColorLight inset-0 rounded-full scale-0 transition-transform ease-in-out duration-300; */
-	}
-	.social-icon:hover::before{
-		/* @apply scale-100 origin-center; */
-	}
-	.indicator{
-		
-	}
+@layer utilities {
+  /* hero */
+  .social-icon {
+    @apply relative border border-primaryColorLight text-primaryColorLight h-10 w-10 rounded-full grid place-items-center cursor-pointer hover:text-whiteColor z-50  duration-300 before:content-[''] before:absolute before:w-full before:h-full before:bg-primaryColorLight before:inset-0 before:rounded-full before:scale-0 before:transition-transform before:ease-in-out before:duration-300 before:-z-10  hover:before:scale-100 hover:origin-center;
+  }
 }
