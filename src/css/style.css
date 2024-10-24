@@ -1049,6 +1049,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
   width: 20rem;
 }
 
+.w-\[80\%\]{
+  width: 80%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1056,6 +1060,14 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[90\%\]{
+  width: 90%;
+}
+
+.w-\[85\%\]{
+  width: 85%;
 }
 
 .max-w-16{
@@ -1124,6 +1136,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
 
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1393,6 +1409,11 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -1434,6 +1455,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
   text-transform: capitalize;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .text-primaryColorLight{
   --tw-text-opacity: 1;
   color: hsl(209 74% 45% / var(--tw-text-opacity));
@@ -1447,6 +1472,11 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
 .text-whiteColor{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-500{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .opacity-5{
@@ -1669,6 +1699,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px){
@@ -1708,10 +1742,6 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
     width: 50%;
   }
 
-  .md\:w-14{
-    width: 3.5rem;
-  }
-
   .md\:w-\[40\%\]{
     width: 40%;
   }
@@ -1726,6 +1756,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -1824,6 +1858,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1885,6 +1923,10 @@ input:is(.dark *), select:is(.dark *), textarea:is(.dark *){
 @media (min-width: 1280px){
   .xl\:max-w-lg{
     max-width: 32rem;
+  }
+
+  .xl\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .xl\:pl-40{
