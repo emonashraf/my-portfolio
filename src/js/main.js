@@ -159,8 +159,8 @@ const activeLink = () => {
 };
 
 window.addEventListener("scroll", activeLink);
-// ~~~~~~~~~~~~~~~ SCROLL REVAL ANIMATION ~~~~~~~~~~~~~~~
 
+// ~~~~~~~~~~~~~~~ SCROLL REVAL ANIMATION ~~~~~~~~~~~~~~~
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",

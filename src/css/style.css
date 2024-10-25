@@ -1787,14 +1787,13 @@ textarea{
     padding-right: 1.5rem;
   }
 
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-\[1\.375rem\]{
+    font-size: 1.375rem;
   }
 
   .md\:text-base{
@@ -1889,11 +1888,6 @@ textarea{
     padding-left: 5rem;
   }
 
-  .lg\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1925,10 +1919,5 @@ textarea{
 
   .xl\:pl-40{
     padding-left: 10rem;
-  }
-
-  .xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
